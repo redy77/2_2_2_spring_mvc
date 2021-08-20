@@ -6,7 +6,6 @@ import java.util.List;
 
 public interface ModelDao {
     List<String> getModels(Integer i);
-    <T>List<T> setCars();
 }
 
 

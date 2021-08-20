@@ -9,7 +9,7 @@ import web.service.ModelServiceImpl;
 
 @Controller
 public class CarController {
-    ModelService modelService = new ModelServiceImpl();
+   private final ModelService modelService = new ModelServiceImpl();
     @GetMapping(value ="cars")
 
     public String cars(@RequestParam(value = "count", required = false) Integer count, ModelMap model) {
