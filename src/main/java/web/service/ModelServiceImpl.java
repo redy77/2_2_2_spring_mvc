@@ -1,6 +1,6 @@
-package service;
+package web.service;
 
-import dao.ModelDaoImpl;
+import web.dao.ModelDaoImpl;
 import java.util.List;
 
 public class ModelServiceImpl implements ModelService{

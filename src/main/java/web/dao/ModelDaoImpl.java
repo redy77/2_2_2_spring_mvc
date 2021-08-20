@@ -1,7 +1,7 @@
-package dao;
+package web.dao;
 
-import models.Cars;
-import models.Model;
+import web.models.Cars;
+import web.models.Model;
 
 import java.util.ArrayList;
 import java.util.List;

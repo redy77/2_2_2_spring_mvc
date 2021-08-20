@@ -1,4 +1,4 @@
-package service;
+package web.service;
 
 import java.util.List;
 
