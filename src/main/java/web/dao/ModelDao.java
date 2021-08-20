@@ -1,10 +1,12 @@
 package web.dao;
 
+import web.models.Cars;
+
 import java.util.List;
 
 public interface ModelDao {
-    <T> List <T>getModels(String i);
-
+    List<String> getModels(Integer i);
+    <T>List<T> setCars();
 }
 
 

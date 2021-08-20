@@ -8,11 +8,11 @@ import web.service.ModelServiceImpl;
 
 @Controller
 public class CarController {
-
+    ModelServiceImpl modelService = new ModelServiceImpl();
     @GetMapping(value ="cars")
-    public String cars(@RequestParam(value = "count", required = false) String count, ModelMap model) {
-        ModelServiceImpl modelService = new ModelServiceImpl();
-        model.addAttribute("messages", modelService.getModels(count));
+
+    public String cars(@RequestParam(value = "count", required = false) Integer count, ModelMap model) {
+        model.addAttribute("cars", modelService.getModels(count));
         return "cars";
     }
 }

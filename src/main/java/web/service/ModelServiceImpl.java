@@ -7,7 +7,8 @@ public class ModelServiceImpl implements ModelService{
 private final ModelDaoImpl modelDao = new ModelDaoImpl();
 
     @Override
-    public List<String> getModels(String i) {
+    public List<String> getModels(Integer i) {
+
         return modelDao.getModels(i);
     }
 }
